@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+$text-color: #595959;
+$subtext-color: #FB6D3A;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  background-color: rgb(224, 224, 224);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  padding-top: 60px;
+
+  &__name {
+    padding: 0 20px 10px 20px;
+    font-size: 40px;
+  }
+
+  &__img {
+    width: 150px;
+    border-radius: 20px;
+    object-fit: contain;
+    margin: 30px;
+    margin-left: 80px;
+  }
+
+  &__profession {
+    padding: 5px 0 10px 20px;
+  }
+
+  &__title {
+    padding: 20px 0 5px 20px;
+  }
+
+  &__text {
+    padding: 20px;
+    margin-left: 30px;
+    max-width: 560px;
+    color: #595959;
+    line-height: 25px;
+    background-color: #ededf4;
+    border-radius: 8px;
+  }
+
+}
+
+.main {
+  display: flex;
+
+}
+
+.skills,
+.framework,
+.tools,
+.languages {
+  padding: 30px 30px 20px 30px;
+
+  &__list {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  &__item {
+    padding: 5px;
+    color: $text-color;
+  }
+}
+
+.education {
+  &__title {
+    padding: 20px 0 15px 20px;
+  }
+
+  &__subtitle {
+    padding: 10px 5px 5px 35px;
+    color: $subtext-color;
+  }
+
+  &__skills {
+    padding: 5px 5px 5px 40px;
+  }
+
+  &__period {
+    padding: 2px 5px 2px 40px;
+    color: #A8A8A8;
+    font-size: 14px;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+}
+
+.experience {
+  &__title {
+    padding: 30px 0 15px 20px;
+  }
+
+  &__company {
+    color: $subtext-color;
+  }
+
+  &__wrap {
+    padding: 15px 30px;
+  }
+
+  &__wrap:nth-of-type(2) {
+    padding-bottom: 50px;
+  }
+
+  &__position,
+  &__period {
+    padding: 5px;
+  }
+
+  &__period {
+    color: #A8A8A8;
+    font-size: 14px;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+
+  &__duties {
+    padding: 3px 5px 5px 35px;
+  }
+
+  &__duty {
+    padding: 3px;
+    color: $text-color;
+  }
+}
+
+.contact {
+  background-color: rgb(226, 237, 255);
+
+  &__wrap {
+    padding: 30px;
+  }
+
+  &__title {
+    padding: 10px;
+  }
+
+  &__email {
+    padding: 5px;
+    padding-left: 15px;
+  }
+
+  &__link {
+    padding-left: 7px;
+  }
+}
